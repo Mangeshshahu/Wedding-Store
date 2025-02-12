@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedessa Wedding Shop - Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .menu-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .menu-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .menu-header h1 {
+            color: #d4668f;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .menu-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .menu-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover .menu-content {
+            transform: translateY(0);
+        }
+
+        .menu-content h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .menu-content p {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #d4668f;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .menu-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+            }
+
+            .menu-header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid pt-5">
+        <div class="trending-section">
+            <h1 class="text-center mb-5 pb-3" style="color: #d4668f; transition: color 0.3s ease;">Menu Card</h1>
+            <div class="row">
+                <img src="./Menu_Card.jpg" alt=""
+                    style="width: 100%; height: 500px; object-fit: cover; transition: transform 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            </div>
+        </div>
+    </div>
+    <div class="menu-container">
+        <div class="menu-header">
+            <h1>Wedessa Wedding Collection</h1>
+            <p>Discover our stunning wedding dresses and accessories</p>
+        </div>
+
+        <div class="menu-grid">
+            <!-- Menu Item 1 -->
+            <div class="menu-item">
+                <img src="./Classic Wedding Dress(1).webp" alt="Classic Wedding Dress">
+                <div class="menu-content">
+                    <h3>Classic Elegance</h3>
+                    <p>A timeless A-line wedding dress with delicate lace details</p>
+                    <span class="price">$1,999</span>
+                </div>
+            </div>
+
+            <!-- Menu Item 2 -->
+            <div class="menu-item">
+                <img src="./light-lilac-sequins-embroidered-net-organza-evening-gown-nb1158.webp"
+                    alt="Modern Wedding Dress">
+                <div class="menu-content">
+                    <h3>Modern Romance</h3>
+                    <p>Contemporary mermaid style with beautiful beading</p>
+                    <span class="price">$2,499</span>
+                </div>
+            </div>
+
+            <!-- Menu Item 3 -->
+            <div class="menu-item">
+                <img src="./Bohemian Wedding Dress.webp" alt="Bohemian Wedding Dress">
+                <div class="menu-content">
+                    <h3>Bohemian Dream</h3>
+                    <p>Free-spirited design with flowing sleeves and floral details</p>
+                    <span class="price">$1,799</span>
+                </div>
+            </div>
+
+            <!-- Menu Item 4 -->
+            <div class="menu-item">
+                <img src="./zevar-bridal-jewelry.jpg" alt="Wedding Accessories">
+                <div class="menu-content">
+                    <h3>Bridal Accessories</h3>
+                    <p>Complete your look with our curated collection</p>
+                    <span class="price">From $299</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./shopping-jwelary.webp" alt="Wedding Accessories">
+                <div class="menu-content">
+                    <h3>Bridal Accessories</h3>
+                    <p>Complete your look with our curated collection</p>
+                    <span class="price">From $299</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

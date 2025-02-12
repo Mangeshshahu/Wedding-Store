@@ -1,0 +1,352 @@
+/* *{
+
+padding: 0px;
+margin: 0px;
+
+}
+.header img{
+width: 107px;
+height: 100px;
+
+}
+.icon img{
+
+    justify-content: center;
+}
+.rousel-itcaem img{
+width: 100%;
+height: 720px;
+}
+.Header-text{
+color: color-mix(in srgb-linear, color percentage, color percentage);
+} */
+.big-img{
+    background-image: url(./bag-imgflower.jpg);
+height: 300px;;
+}
+/* .button{
+
+
+}
+.btn1{
+
+    justify-content: center;
+}
+.images-fluid img {
+    position: absolute;
+    max-width: 137px; */
+    /* transform: translate(50%, -50%);
+    top: 82%;
+    left: 55%;
+    padding-left: 10px;
+    /* bottom: 27px; */
+}
+.section{
+
+    background-color: brown;
+}
+/* .shiping-icon{
+padding-top: 99px;
+
+
+} */
+.slider-hading1{
+font-size: 20px;
+color: #d21e57d6;
+
+}
+.slider-hading2{
+    font-size: 20px;
+    line-height: 2px;
+    
+    }
+@media(max-width:900px){
+    .bonus-gift img{
+
+flex: 1 1 100%;
+
+    }
+
+} */
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header .icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Search Bar */
+.search-icon {
+    margin: 0 1rem;
+}
+
+.search-icon input {
+    max-width: 200px;
+}
+
+/* Carousel Styles */
+.carousel-item img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.slider-hading1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.slider-hading2 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.slider-hading3 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+/* Trending Shoes Collection Heading Styles */
+.container h1 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.container h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, #007bff, #0056b3);
+}
+
+/* Shoe Card Heading Styles */
+.shoe-card h3 {
+    font-family: 'Arial', sans-serif;
+    color: #2c3e50;
+    font-weight: 600;
+    margin: 15px 0;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.shoe-card h3:hover {
+    color: #007bff;
+}
+
+/* Price Styles */
+.original-price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+
+.discounted-price {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.discount-badge {
+    background-color: #27ae60;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Product Cards */
+.card {
+    transition: transform 0.3s ease;
+    margin-bottom: 1.5rem;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.header-selling {
+    color: #e44d26;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+/* Welcome Section */
+.big-img {
+    padding: 3rem 1rem;
+    background-color: #f8f9fa;
+}
+
+.Header-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.para-taxt {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Image Gallery */
+.images-fluid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Shipping Section */
+.section {
+    padding: 3rem 1rem;
+    background-color: #f8f9fa;
+    margin: 2rem 0;
+}
+
+.shiping-icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.H-section {
+    margin: 0.5rem 0;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 50vh;
+    }
+
+    .slider-hading1 {
+        font-size: 2rem;
+    }
+
+    .slider-hading2 {
+        font-size: 1.5rem;
+    }
+
+    .slider-hading3 {
+        font-size: 1rem;
+    }
+
+    .Header-text h1 {
+        font-size: 2rem;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .carousel-item img {
+        height: 40vh;
+    }
+
+    .Header-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .card-img-top {
+        height: 180px;
+    }
+
+    .search-icon input {
+        max-width: 150px;
+    }
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #e44d26;
+    border-color: #e44d26;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #c73e1d;
+    border-color: #c73e1d;
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card, .big-img, .section {
+    animation: fadeIn 0.8s ease-out;
+}
